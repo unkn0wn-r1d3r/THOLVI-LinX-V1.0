@@ -149,3 +149,13 @@ Cron Job	               | chmod 700 /opt/backdoor.sh
 Capabilities	         | setcap -r $(which python3)
 SSH Backdoor	         | userdel -r hacker
 Kernel	Update system: | apt update && apt upgrade
+~~~
+### Recommended Linux Versions
+```
+Distribution	Version	Kernel	Why Recommended
+Ubuntu	16.04 LTS (Xenial)	4.4.x	Perfect for DirtyCow (CVE-2016-5195) and older vulnerabilities
+Ubuntu	18.04 LTS (Bionic)	5.4.x	Good balance for SUID/sudo exploits and some kernel vulns
+Debian	10 (Buster)	4.19.x	Stable with writable /etc/passwd and cron issues
+Fedora	33	5.10.x	Ideal for DirtyPipe (CVE-2022-0847)
+```
+
