@@ -145,7 +145,7 @@ Vulnerability	         | Secure Configuration
 SUID Binary	            | chmod u-s /usr/bin/suid-sh
 Sudo Misconfig	         | Remove NOPASSWD: ALL from /etc/sudoers
 Cron Job	               | chmod 700 /opt/backdoor.sh
-/etc/passwd	            | chmod 644 /etc/passwd
+/etc/passwd	          | chmod 644 /etc/passwd
 Capabilities	         | setcap -r $(which python3)
 SSH Backdoor	         | userdel -r hacker
 Kernel	Update system: | apt update && apt upgrade
